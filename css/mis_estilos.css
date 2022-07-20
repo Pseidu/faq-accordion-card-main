@@ -1,0 +1,77 @@
+:root {
+    --textDarkBlue: hsl(238, 29%, 16%);
+    --textSoftRed: hsl(14, 88%, 65%);
+
+    --textGray: hsl(237, 12%, 33%);
+    --textLightGray: hsl(240, 6%, 50%);
+
+    --gradientViolet: hsl(273, 75%, 66%);
+    --gradientBlue: hsl(240, 73%, 65%);
+
+    --dividerGray: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+
+    background-image: linear-gradient(var(--gradientViolet), var(--gradientBlue));
+}
+
+main {
+    background-color: white;
+    width: 325px;
+    border-radius: 10%;
+    padding: 25px;
+}
+
+picture img {
+    width: 80%; /*260px;*/
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -125px;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.img-shadow-mobile {
+    width: 260px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+:target {
+    height: auto;
+}
+
+p {
+    overflow: hidden;
+    height: 0vh;
+}
