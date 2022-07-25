@@ -1,0 +1,87 @@
+:root {
+    --textDarkBlue: hsl(238, 29%, 16%);
+    --textSoftRed: hsl(14, 88%, 65%);
+
+    --textGray: hsl(237, 12%, 33%);
+    --textLightGray: hsl(240, 6%, 50%);
+
+    --gradientViolet: hsl(273, 75%, 66%);
+    --gradientBlue: hsl(240, 73%, 65%);
+
+    --dividerGray: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 20px;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-image: linear-gradient(var(--gradientViolet), var(--gradientBlue));
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 25px;
+
+    width: 325px;
+    margin: auto;
+}
+
+div {
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 20px top -10px;
+}
+
+picture img {
+    width: 85%; /*80% = 260px;*/
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -120px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    font-weight: 700;
+    position: relative;
+    top: -55px;
+}
+
+article {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid var(--dividerGray);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--textGray);
+}
+
+p {
+    overflow: hidden;
+    height: 0vh;
+    color: var(--textLightGray);
+}
+
+input:checked ~ p {
+    height: auto;
+    margin-top: 15px;
+}
