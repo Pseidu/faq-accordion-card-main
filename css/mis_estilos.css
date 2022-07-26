@@ -36,6 +36,10 @@ main {
     margin: auto;
 }
 
+.cube {
+    display: none;
+}
+
 .div-img {
     background-image: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -120,18 +124,29 @@ details[open] img {
     }
 
     main {
-        min-width: 800px;
+        min-width: 920px;
+        min-height: 509px;
         display: inherit;
+        padding: 0;
     }
 
     .div-img {
         background-image: url(../images/bg-pattern-desktop.svg);
-        background-position: right 0px bottom 0px;
+        background-position: right 90px bottom -136px; /*right 150px bottom -140px; */
+
+        overflow: hidden;
     }
 
     picture img {
+        width: 100%;
+        left: -20%;
+        top: 14%;
+        
+        /*width: 85%; /*80% = 260px;*/
+        /*display: block;
         margin: auto;
-        position: static;
+        position: relative;
+        top: -120px;*/
     }
 
     .div-text {
@@ -141,7 +156,7 @@ details[open] img {
         flex-direction: column;
 
         min-width: 50%;
-        padding-left: 10px;
+        padding-left: 16px;
     }
 
     h1 {
