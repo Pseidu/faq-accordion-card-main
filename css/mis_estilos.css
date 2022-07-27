@@ -27,11 +27,11 @@ body {
     background-image: linear-gradient(var(--gradientViolet), var(--gradientBlue));
 }
 
-main {
+main { l
     background-color: white;
     border-radius: 20px;
     padding: 15px 25px;
-
+i
     max-width: 325px;
     margin: auto;
 }
@@ -172,4 +172,13 @@ details[open] img {
     }
 
 }
+/*    para el cube box img
 
+      &__src__boximg{
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 5px;
+      width: 200px;
+      transform: translateX(-50%);
+      z-index: 99; */
