@@ -27,11 +27,11 @@ body {
     background-image: linear-gradient(var(--gradientViolet), var(--gradientBlue));
 }
 
-main { l
+main {
     background-color: white;
     border-radius: 20px;
     padding: 15px 25px;
-i
+
     max-width: 325px;
     margin: auto;
 }
@@ -128,57 +128,56 @@ details[open] img {
         min-height: 509px;
         display: inherit;
         padding: 0;
+        position: relative;
     }
 
     .div-img {
+        width: 50%;
         background-image: url(../images/bg-pattern-desktop.svg);
-        background-position: right 90px bottom -136px; /*right 150px bottom -140px; */
+        background-position: right 90px bottom -136px;
 
         overflow: hidden;
     }
 
     picture img {
         width: 100%;
-        left: -20%;
+        left: -19%;
         top: 14%;
-        
-        /*width: 85%; /*80% = 260px;*/
-        /*display: block;
-        margin: auto;
-        position: relative;
-        top: -120px;*/
     }
 
     .div-text {
         display: flex;
-        justify-content: center;
-        align-content: center;
         flex-direction: column;
 
-        min-width: 50%;
-        padding-left: 16px;
+        width: 50%;
+        padding: 64px 105px 30px 16px ;
     }
 
     h1 {
         text-align: left;
-        font-size: 2.6em;
-        font-weight: 700;
         position: static;
-        
     }
 
     ul {
-        margin-top: 0px;
+        margin-top: 38px;
+    }
+
+    li {
+        margin: 0px;
+        padding-bottom: 17px;
+    }
+
+    p {
+        width: initial;
+    }
+
+    .cube {
+        display: initial;
+        position: absolute;
+        top: 40%;
+        left: -14%;
+        z-index: 1;
     }
 
 }
-/*    para el cube box img
 
-      &__src__boximg{
-      display: block;
-      position: absolute;
-      top: 40%;
-      left: 5px;
-      width: 200px;
-      transform: translateX(-50%);
-      z-index: 99; */
