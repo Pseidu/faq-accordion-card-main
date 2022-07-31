@@ -159,12 +159,17 @@ details[open] img {
     }
 
     ul {
-        margin-top: 38px;
+        margin-top: 39px;
     }
 
     li {
-        margin: 0px;
-        padding-bottom: 17px;
+        margin: 17px 0 15px;
+        padding-bottom: 18px;
+    }
+
+    li:first-child {
+        margin-top: 0px;
+        padding-bottom: 16px;
     }
 
     p {
