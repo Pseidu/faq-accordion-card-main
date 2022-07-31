@@ -1,9 +1,7 @@
 # Frontend Mentor - FAQ accordion card solution
-
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
 ## Table of contents
-
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -13,30 +11,22 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
-
 ### The challenge
 
 Users should be able to:
-
 - View the optimal layout for the component depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
-
 ./screenshot.jpg
 
-
 ### Links
-
 - Solution URL: https://github.com/Pseidu/faq-accordion-card-main.git
 - Live Site URL: https://pseidu.github.io/faq-accordion-card-main/
 
 ## My process
-
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
@@ -44,10 +34,10 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-
 HTML: I used details and picture elements for the first time
 CSS: An element positioned absolute references first ancestor positioned.
 
+Styling details element:
 ```css
 details[open] summary {
     font-weight: bold;
