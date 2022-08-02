@@ -62,8 +62,16 @@ h1 {
     top: -55px;
 }
 
+dl {
+    margin-top: -45px;
+    margin-bottom: 30px;
+}
+
 dt {
     border-top: 1px solid var(--dividerGray);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    
     cursor: pointer;
     font-size: 1.1em;
     font-weight: 400;
@@ -94,21 +102,17 @@ dd:last-child {
     width: 95%;
 }
 
-details[open] summary {
+dt.active {
     font-weight: bold;
 }
 
-details[open] p {
-    height: auto;
-    margin-top: 15px;
+dt.active > img {
+    transform: rotate(180deg);
 }
 
-details[open] img {
-    /*-webkit-transform:rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);*/
-    transform: rotate(180deg);
+dd.active {
+    height: auto;
+    padding-bottom: 15px;
 }
 
 @media screen and (min-width: 600px) {
@@ -155,22 +159,8 @@ details[open] img {
         position: static;
     }
 
-    ul {
-        margin-top: 39px;
-    }
-
-    li {
-        margin: 17px 0 15px;
-        padding-bottom: 18px;
-    }
-
-    li:first-child {
-        margin-top: 0px;
-        padding-bottom: 16px;
-    }
-
-    p {
-        width: initial;
+    dl {
+        margin-top: 22px;
     }
 
     .cube {
